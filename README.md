@@ -75,12 +75,6 @@ def send_markdown
   DingBot.send_msg(message)
 end
 
-#发送复杂的Markdown消息
-def send_markdown
-
-  
-end
-
 # 发送整体跳转ActionCard消息
 def send_whole_action_card
   message = DingBot::Message::WholeActionCard.new(
