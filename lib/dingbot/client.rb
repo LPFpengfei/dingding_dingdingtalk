@@ -51,8 +51,8 @@ module DingBot
       send_msg(message)
     end
 
-    def send_markdown(title, text)
-      message = DingBot::Message::Markdown.new(title, text)
+    def send_markdown(title, text, at_mobiles)
+      message = DingBot::Message::Markdown.new(title, text, at_mobiles)
       send_msg(message)
     end
 

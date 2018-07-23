@@ -66,7 +66,19 @@ end
 
 # 发送Markdown消息
 def send_markdown
-  DingBot.send_markdown('我就是我, 是不一样的烟火', '### 我就是我, 是不一样的烟火', ['13888888888'])
+  message = BingBot::Message::Markdown.new(
+    '我就是我',
+    '我就是我不一样的花火',
+    ['1371xxxx117'],
+    false
+  )
+  DingBot.send_msg(message)
+end
+
+#发送复杂的Markdown消息
+def send_markdown
+
+  
 end
 
 # 发送整体跳转ActionCard消息
