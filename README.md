@@ -7,6 +7,10 @@ DingTalk Bot是阿里钉钉自定义机器人的Ruby库
 官方文档：[阿里钉钉自定义机器人](https://open-doc.dingtalk.com/docs/doc.htm?spm=a219a.7629140.0.0.karFPe&treeId=257&articleId=105735&docType=1). 
 
 
+## 来自原有gem
+修改原有gem中对于Markdown不能@用户的问题
+原项目地址(https://github.com/thierryxing/dingtalk-bot)
+
 ## 安装
 从rubygems中安装:
 
@@ -17,7 +21,7 @@ gem install dingbot
 添加到Gemfile中:
 
 ```ruby
-gem 'dingbot'
+gem 'dingbot', git: 'git@github.com:LPFpengfei/dingding_dingdingtalk.git'
 ```
 
 ## 用法
